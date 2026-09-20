@@ -1,0 +1,99 @@
+/* 
+I was struggling with alignment and asked ChatGPT for help after uploading a reference i designed myself in canva
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   FIRST SECTION
+========================================= */
+
+.first-page {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: 768px;
+
+    background: white;
+}
+
+
+.breathe-graphic {
+    position: absolute;
+
+    width: 36.31vw;
+    max-width: 496px;
+    height: auto;
+
+    left: 0;
+    top: 113px;
+}
+
+
+.calendar-graphic {
+    position: absolute;
+
+    width: 54.61vw;
+    max-width: 746px;
+    height: auto;
+
+    left: 41.21vw;
+    top: 113px;
+}
+
+
+/* =========================================
+   SECOND SECTION
+========================================= */
+
+.dashboard-section {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: 768px;
+
+    background: #79bdf2;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HAVEN GRAPHIC
+========================================= */
+
+.haven-graphic {
+    position: absolute;
+
+    /*
+       The PNG contains transparent space around
+       the actual scrapbook.
+
+       Therefore we intentionally make the PNG
+       much larger than the visible graphic.
+    */
+
+    width: 1600px;
+    height: auto;
+
+    left: -305px;
+    top: 0;
+}
