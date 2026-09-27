@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <title>Tasks - Haven</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: cornflowerblue;
+        }
+
+        .canva {
+            position: fixed;
+            inset:0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .canva-frame {
+            position: relative;
+            width: 100vw;
+            height:100vh;
+        }
+
+        .canva iframe {
+            position:absolute;
+            top:0;
+            left:0;
+
+            width: 100%;        
+            height: 100%;
+
+            border: none;  
+            display: block;
+        }
+
+       .back-button {
+        position: absolute;
+
+        left: 1.93%;   
+        top: 3.28%;
+
+        width: 18.42%;
+        height: 10.14%;
+
+        background: transparent;
+        border:none;
+
+        cursor: pointer;
+
+        z-index: 10;
+
+        outline: none;
+       } 
+
+       .back-button:hover,
+       .back-button:focus,
+       .back-button:active {
+        background: transparent;
+        border:none;
+        outline: none;
+        box-shadow: none;
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="canva">
+
+        <div class="canva-frame">
+            <iframe
+               src="https://www.canva.com/design/DAHV_e3yXIo/XcxUSos3crdzuZwnd3_mPQ/view?embed"
+               allowfullscreen>
+            </iframe>
+
+            <button
+            class="back-button"
+            type="button"
+            onclick="history.back()">
+            </button>
+        </div>
+    </div>                    
+</body>   
+</html>   
